@@ -14,17 +14,17 @@ const routes: Routes = [
       {
         path: 'home',
         outlet: 'home',
-        component: HomePage
+        loadChildren: '../home/home.module#HomePageModule'
       },
       {
         path: 'about',
         outlet: 'about',
-        component: AboutPage
+        loadChildren: '../about/about.module#AboutPageModule'
       },
       {
         path: 'contact',
         outlet: 'contact',
-        component: ContactPage
+        loadChildren: '../contact/contact.module#ContactPageModule'
       }
     ]
   },
